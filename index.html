@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Retro Vibe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Container (PNG Image & Video Loop) -->
+    <div class="bg-container">
+        <!-- Background Image (bus-bg.png naam se save karein) -->
+        <img src="bus-bg.png" alt="Background" class="bg-image">
+        
+        <!-- Video Loop (bus-loop.mp4 naam se save karein) -->
+        <video autoplay muted loop id="bg-video">
+            <source src="bus-loop.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Audio File (Aapki M4A file) -->
+    <audio id="audio-player" src="your-song.m4a"></audio>
+
+    <!-- Sleek & Thin Music Player Bar -->
+    <div class="slim-player">
+        <!-- Thumbnail (Ye bhi PNG image use karega) -->
+        <img src="bus-bg.png" alt="Art" class="player-thumb">
+
+        <!-- Song Info -->
+        <div class="player-info">
+            <span class="song-name">Classic Retro Mix</span>
+            <span class="artist-name">60s - 90s Vibe</span>
+        </div>
+
+        <!-- Play / Pause Button -->
+        <button id="play-btn">
+            <i class="fa-solid fa-play" id="play-icon"></i>
+        </button>
+
+        <!-- Thin Progress Bar Line -->
+        <div class="progress-line-container">
+            <input type="range" id="progress" value="0" max="100">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
